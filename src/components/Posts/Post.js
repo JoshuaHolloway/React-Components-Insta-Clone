@@ -31,7 +31,7 @@ const Post = props => {
       />
 
       {/* Comments also wants its props! */}
-      <Comments />
+      <Comments key={post.id} comments={post.comments}/>
 
     </div>
   );
